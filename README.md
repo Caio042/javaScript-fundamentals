@@ -15,3 +15,10 @@ Desde lógica básica, passando por orientação a objetos e chegando a programa
 
 ### Lista do conteúdo
 - Hello world
+- Declaração e uso de variáveis
+- Operações matemáticas e lógicas
+- Tipos de dados
+- Array
+- Fluxo de código
+- Condicionais
+- Repetição
