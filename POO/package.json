@@ -1,0 +1,21 @@
+{
+  "name": "banco",
+  "version": "1.0.0",
+  "description": "banco POO",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Caio042/javaScript-fundamentals.git"
+  },
+  "author": "caio.lima",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Caio042/javaScript-fundamentals/issues"
+  },
+  "homepage": "https://github.com/Caio042/javaScript-fundamentals#readme",
+  "type": "module"
+}
