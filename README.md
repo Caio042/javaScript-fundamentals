@@ -13,7 +13,7 @@ Aprender os fundamentos da linguagem vanilla para utilização de frameworks SPA
 ## Conteúdo
 Desde lógica básica, passando por orientação a objetos e chegando a programação funcional.
 
-### Lista do conteúdo
+### Lista de conteúdos
 - [Hello world](Hello-world/helloWorld.js)
 - [Declaração e uso de variáveis](variaveis-e-operacoes/variaveis.js)
 - [Operações matemáticas e lógicas](variaveis-e-operacoes/operacoes.js)
@@ -21,4 +21,4 @@ Desde lógica básica, passando por orientação a objetos e chegando a programa
 - [Array](variaveis-e-operacoes/array.js)
 - [Condicionais](fluxo/condicionais.js)
 - [Repetição](fluxo/repeticao.js)
-- [Orientação a objeto](POO/)
+- [Orientação a objetos](POO/)
