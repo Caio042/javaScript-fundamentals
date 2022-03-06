@@ -1,45 +1,25 @@
-import { Cliente } from "./Cliente.js";
+import { Conta } from "./Conta.js";
 
-export class ContaCorrente {
-    static contasAbertas = 0; /*Variavel estático*/
-    agencia;
-    cliente;
-    #saldo; //atributo privado
+export class ContaCorrente extends Conta {
+    static contasAbertas = 0; /*Atributo estático*/
 
-    constructor(agencia, cliente) {
-        this.agencia = agencia;
-        this.cliente = cliente;
-        this.#saldo = 0;
-        ContaCorrente.contasAbertas++;
+    constructor(cliente, agencia) {
+        super(0, agencia, cliente);
+        ContaCorrente.contasAbertas++; /*Uso de atributo estático*/
     }
 
-    set cliente(cliente) { /*A atribuição continua sendo Conta.cliente = x, mas tem essa checkagem*/
-        if (cliente instanceof Cliente) {
-            this.cliente = cliente;
-        }
-    }
-
-    get saldo() {
-        return this.#saldo;
-    }
-
+    /*Sobrescrita de método*/
     sacar(valor) {
-        if (this.#saldo < valor && valor <= 0) {
+        /**
+         * Taxa de 10% ao sacar de conta corrente
+         */
+        const taxa = 0.1;
+        const valorComTaxa = valor + valor * taxa;
+
+        if (super.saldo < valorComTaxa && valor <= 0) {
             return;
         }
-        this.#saldo -= valor;
+        super.sacar(valorComTaxa);
         return valor;
-    }
-
-    depositar(valor) {
-        if (valor < 0) {
-            return;
-        }
-        this.#saldo += valor;
-    }
-
-    tranferir(valor, conta) {
-        const valorSacado = this.sacar(valor);
-        conta.depositar(valor);
     }
 }

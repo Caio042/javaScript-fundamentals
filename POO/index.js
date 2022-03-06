@@ -1,4 +1,5 @@
 import {Cliente} from "./Cliente.js";
+import { Conta } from "./Conta.js";
 import {ContaCorrente} from "./ContaCorrente.js"
 
 const cliente = new Cliente("Antônio", "944.545.632-98");
