@@ -22,3 +22,4 @@ Desde lógica básica, passando por orientação a objetos e chegando a programa
 - [Condicionais](fluxo/condicionais.js)
 - [Repetição](fluxo/repeticao.js)
 - [Orientação a objetos](POO/)
+- [Manipulação de HTML](midi/)
